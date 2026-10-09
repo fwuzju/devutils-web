@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevUtils Web — Offline Developer Toolbox</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div id="sidebar-header">
+      <div id="logo">🧰 DevUtils <span class="logo-badge">web</span></div>
+      <input id="tool-search" type="search" placeholder="Search tools… (⌘K)" autocomplete="off">
+    </div>
+    <nav id="tool-list"></nav>
+    <div id="sidebar-footer">
+      <button id="theme-toggle" class="du-btn" title="Toggle light/dark theme">🌙 Dark</button>
+      <span class="offline-badge">● offline</span>
+    </div>
+  </aside>
+  <main id="main">
+    <div id="smart-detect" class="hidden">
+      <span class="sd-label">⚡ Smart detect:</span>
+      <input id="sd-input" type="text" placeholder='Paste something — e.g. {"a":1}, aGVsbG8=, 1611241901, eyJhbGci…' autocomplete="off" spellcheck="false">
+      <div id="sd-results"></div>
+    </div>
+    <div id="tool-container"></div>
+  </main>
+</div>
+
+<script src="js/registry.js"></script>
+<script src="js/vendor/md5.js"></script>
+<script src="js/vendor/js-yaml.min.js"></script>
+<script src="js/vendor/qrcode.js"></script>
+<script src="js/vendor/jsQR.js"></script>
+<!-- tools -->
+<script src="js/tools/json-formatter.js"></script>
+<script src="js/tools/html-beautifier.js"></script>
+<script src="js/tools/css-beautifier.js"></script>
+<script src="js/tools/js-beautifier.js"></script>
+<script src="js/tools/xml-beautifier.js"></script>
+<script src="js/tools/sql-formatter.js"></script>
+<script src="js/tools/base64-text.js"></script>
+<script src="js/tools/base64-image.js"></script>
+<script src="js/tools/url-codec.js"></script>
+<script src="js/tools/html-entities.js"></script>
+<script src="js/tools/hex-ascii.js"></script>
+<script src="js/tools/jwt-debugger.js"></script>
+<script src="js/tools/unix-time.js"></script>
+<script src="js/tools/number-base.js"></script>
+<script src="js/tools/color-converter.js"></script>
+<script src="js/tools/yaml-json.js"></script>
+<script src="js/tools/json-csv.js"></script>
+<script src="js/tools/query-string-json.js"></script>
+<script src="js/tools/html-to-jsx.js"></script>
+<script src="js/tools/case-converter.js"></script>
+<script src="js/tools/uuid-generator.js"></script>
+<script src="js/tools/nanoid-generator.js"></script>
+<script src="js/tools/hash-generator.js"></script>
+<script src="js/tools/lorem-ipsum.js"></script>
+<script src="js/tools/random-string.js"></script>
+<script src="js/tools/qr-generator.js"></script>
+<script src="js/tools/regexp-tester.js"></script>
+<script src="js/tools/text-diff.js"></script>
+<script src="js/tools/string-inspector.js"></script>
+<script src="js/tools/line-sort-dedupe.js"></script>
+<script src="js/tools/html-preview.js"></script>
+<script src="js/tools/qr-reader.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
